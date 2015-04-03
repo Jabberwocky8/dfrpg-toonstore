@@ -3,9 +3,9 @@ function validate()
 	var valid = /^[A-Za-z0-9_-]+$/.test( $('#canon_name').val() );
 	if( !valid ){
 		if( $('div.error').length == 0 )
-			$('<div class="content-block"><div class="error"><p>That short name is invalid.</p></div></div>').prependTo( $('.content') );
+			$('<div class="content-block"><div class="error"><p>'+clientStrings.invalid+'</p></div></div>').prependTo( $('.content') );
 		else
-			$('div.error>p').text('That short name is invalid');
+			$('div.error>p').text(clientStrings.invalid);
 	}
 	return valid;
 }
@@ -24,7 +24,7 @@ function prepopulateCopy()
 		$.getJSON('/'+match[1]+'/json', function(data,status,xhr)
 		{
 			$('input#name').val(data.name);
-			$('input#canon_name').val( match[1].split('/')[1] );
+			$('input#canon_name').val( match[1].split('/')[1] + '_dupe' );
 			$('input#concept').val(data.aspects.high_concept.name);
 
 			// select a template and hide the select if the template is provided as a query arg
@@ -38,7 +38,10 @@ function prepopulateCopy()
 			$('#templateContainer').css({display: 'none'});
 
 
-			$('<div class="info" style="margin-top: 15px;">Duplicating character:<br/><strong>'+data.name+'</strong><br/><span class="caption">('+match[1]+')</span></div>').insertBefore('.formbox form');
+			$('<aside class="info" style="margin-top: 15px;">'+
+				clientStrings.duplicating+'<br/><strong>'+data.name+'</strong><br/><span class="caption">('+match[1]+')</span>'+
+				'</div>'
+			).insertBefore('.formbox form');
 		});
 	}
 }

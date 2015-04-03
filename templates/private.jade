@@ -1,15 +1,11 @@
-extends index
+extends theme
 
 block title
-	title #{toonName} | ToonStore.net
-	meta(name='description', content='Access to the character sheet for #{toonName} has been blocked by the owner.')
+	title= toonName + ', ' + toonConcept + ' | ToonStore.net'
+	meta(name='description', content=__('private.meta_description', toonName))
 
-block content
+block article_header
+	h2= __('private.pagetitle')
 
-	h2 Cannot access private character
-
-	.content-block: .normalbox
-
-		p Access to this character sheet has been blocked by the owner. Log in as 
-			a(href=url('/#{toonOwner}'))= toonOwner
-			|  to view and edit this character.
+block article_body
+	p= __('private.content')

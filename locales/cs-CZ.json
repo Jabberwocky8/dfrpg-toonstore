@@ -1,22 +1,22 @@
 {
-	"language": "English (United States)",
+	"language": "Čeština (Česká republika)",
 
 	"nav":
 	{
 		"menu": "Menu",
-		"about": "About",
-		"contact": "Contact Us",
-		"logout": "Log Out",
-		"terms": "Terms of Use",
-		"privacy": "Privacy Policy",
-		"donate": "Donate",
-		"register": "Register",
-		"login": "Log In",
+		"about": "O nás",
+		"contact": "Kontakt",
+		"logout": "Odhlásit",
+		"terms": "Podmínky používání",
+		"privacy": "Ochrana soukromí",
+		"donate": "Podpořte nás",
+		"register": "Registrovat",
+		"login": "Přihlásit",
 		"language": "Language: ",
 		"lang_dialog": {
-			"prompt": "This page is available in your native language (%s). Would you like to view this version instead?",
-			"accept": "Take me there",
-			"reject": "Keep me here"
+			"prompt": "Tato stránka existuje v češtině. Chcete pracovat s českou versí?",
+			"accept": "Ano, chci.",
+			"reject": "Ne, nechci."
 		},
 		"flexbox_unsupported": {
 			"f1": "This site is ",
@@ -174,7 +174,7 @@
 		"submit": "Delete character",
 		
 		"clientStrings": {
-			"error": "Enter the confirmation text"
+			"error": "You must enter the confirmation text to delete the character."
 		}
 	},
 
@@ -332,42 +332,42 @@
 
 	"index":
 	{
-		"pagetitle": "Online Dresden Files RPG Character Hosting",
-		"meta_description": "Create, modify, and share cloud-based mobile-friendly Dresden Files RPG or Fate character sheets right in your browser with ToonStore.",
+		"pagetitle": "Online úložiště postav pro Dresden Files RPG",
+		"meta_description": "Vytvářejte, upravujte a sdílejte postavy pro Dresden Files RPG nebo FATE. Postavy jsou uloženy v cloudu a optimalisovány pro vzdálený přístup z internetového prohlížeče či telefonu.",
 		"banner": {
-			"subtitle": "+2 to organization rolls"
+			"subtitle": "+2 bonus k hodům na organisaci"
 		},
-		"p1": "Greetings, roleplayer!",
-		"p2": "Everyone has run into this scenario: you and your partymates are going through character creation, filling out your character sheet, and your DM asks for a copy of your character sheet. You have a brief moment of confusion. Do you scan it and email it? Do you transcribe it? Just email the aspects?",
-		"p3": "Perhaps you're forward-looking. Perhaps you've been doing your character from your laptop the whole time. But without the formal layout of an actual character sheet, no one but you can read your text-based character sheet.",
-		"p4": "This is where ToonStore comes in. We store your Dresden Files RPG or other Fate-based character data in the cloud, so you never lose it and can easily share it. Just view the online character sheet and make your edits right in the browser. We're mobile-friendly too, so you don't have to haul your 10 pound laptop around either.",
+		"p1": "Vítejte!",
+		"p2": "Každý z nás už se s tím někdy setkal: Vytvoříte si postavu, vyplníte všechny kolonky a váš GM chce pro sebe jednu kopii. Co s tím? Nascanovat a poslat e-mailem? Opsat mu to? Celé? Nebo stačí opsat aspekty?",
+		"p3": "Možná už jste s tím tak trochu počítali. Vytvořili jste si třeba postavu přímo v počítači. Jenže bez jednotné formální úpravy svým textovým poznámkám stejně rozumíte jen vy sami.",
+		"p4": "A tady nastupuje ToonStore. U nás si můžete uložit svou postavu pro Dresden Files RPG či jinou hru založenou na FATE do cloudu, takže ji už nikdy neztratíte a můžete ji snadno sdílet s ostatními. Můžete k ní přistupovat a editovat ji přímo z prohlížeče. Celé je to optimalisované i pro mobil, a tudíž s sebou nemusíte tahat ani svůj pětikilový notebook.",
 		"p5": {
-			"f1": "Interested? ",
-			"f2": "Log in",
-			"f3": " with your ",
+			"f1": "Zaujalo vás to?",
+			"f2": "Přihlaste se",
+			"f3": " svým ",
 			"f4": "Persona",
-			"f5": " account, or ",
-			"f6": "try it now",
-			"f7": " to get rolling!"
+			"f5": " účtem, nebo ",
+			"f6": "si to jen",
+			"f7": " vyzkoušejte!"
 		}
 	},
 
 	"about":
 	{
-		"pagetitle": "About ToonStore",
-		"meta_description": "Learn about ToonStore, the cloud-based Fate character toolkit.",
+		"pagetitle": "O službě ToonStore",
+		"meta_description": "Více informací o službě ToonStore, cloudovém úložišti postav pro FATE.",
 
-		"h1": "What is the ToonStore?",
-		"p1": "ToonStore is a place where Dresden Files RPG roleplayers can store their character sheets without having to worry about losing them, or destroying them, or leaving them behind. You can create your characters right from our easy-to-use HTML interface, edit them right at the table, and share links with your friends and/or GM via whatever medium you like.",
+		"h1": "Co je ToonStore?",
+		"p1": "ToonStore je místo, kam si hráči Dresden Files RPG mohou ukládat své postavy, aniž by se museli bát, že je ztratí, zmačkají, zapomenou doma apod. Postavu si můžete vytvořit přímo v našem instinktivním HTML rozhraní, editovat ji rovnou od herního stolu a sdílet ji prostřednictvím linku se spoluhráči nebo GM, jak se vám zlíbí.",
 
-		"h2": "How did ToonStore come to be?",
-		"p2": "In the beginning, it was simply an effort to make a better version of the fillable character sheet PDF already available. As time went on though, it slowly grew in scope and complexity to encompass character hosting as well. It was originally just for my group's benefit, but since it is no more difficult to make it publicly available, I opened it up to the public. The rest, as they say, is history.",
+		"h2": "Jak ToonStore vznikl?",
+		"p2": "Na začátku byla snaha vyrobit nějakou lepší versi již existujícího vyplňovatelného PDF záznamníku postavy. Postupně se přidala možnost si postavu v systému také uložit. Původně se jednalo o službu určenou jenom mé skupině hráčů, ale vzhledem k tomu, že zveřejnění celé věci už nedalo moc další práce, rozhodl jsem se zpřístupnit ToonStore všem. Zbytek je, jak se říká, historie.",
 
-		"h3": "Who is Derogatory Studios?",
+		"h3": "Co je Derogatory Studios?",
 		"p3": {
-			"f1": "Primarily it is just me, Steven Vergenz, advised by the other members of my gaming group. I don't have a ton of time to work on this project though, so if you want to work on a feature for your own group, feel free to fork this project on ",
-			"f2": "Github",
-			"f3": " for your own needs. If you do so though, I would appreciate it if you would contribute your new features back to the original ToonStore project once you're done."
+			"f1": "Jsem to v podstatě hlavně já, Steven Vergenz, s občasným přispěním ostatních členů naší herní skupiny. Času na vylepšování systému nemám nazbyt, takže pokud byste chtěli vytvořit nějakou funkci pro své potřeby, rozdělte (fork) tento projekt na ",
+			"f2": "Githubu",
+			"f3": " a naprogramujte si, co potřebujete. Jestli se vydáte touto cestou, byl bych rád, kdybyste výsledek své práce opět vložili i do původního projektu ToonStore."
 		},
 
 		"h4": "Additional Credits",
@@ -382,38 +382,38 @@
 
 	"contact":
 	{
-		"pagetitle": "Contact Us",
-		"meta_description": "How to contact the developers and maintainers of the ToonStore.",
+		"pagetitle": "Kontakt",
+		"meta_description": "Jak kontaktovat vývojáře a správce služby ToonStore.",
 
-		"h1": "Questions? Comments? Suggestions?",
-		"p1": "We're easy to get a hold of! You have a couple options:",
+		"h1": "Otázky? Komentáře? Doporučení?",
+		"p1": "Nic snazšího než se nám ozvat! Možností máte několik:",
 
 		"h2": "Github",
 		"p2": {
-			"f1": "The ",
-			"f2": "source code",
-			"f3": " for this site is all publicly available under the Apache 2.0 License, so you're welcome to start your own Toonstore for your group if you want to."
+			"f1": "Zdrojový ",
+			"f2": "kód",
+			"f3": " této stránky je veřejně dostupný prostřednictvím Apache 2.0 License, takže si můžete vytvořit a spustit svůj vlastní Toonstore pro svou herní skupinu."
 		},
 		"p3": {
-			"f1": "We also use Github for bug reporting and feature requests. If you find a flaw in the site, or have an idea for a killer new feature, let us know! Submit an ",
-			"f2": "issue report",
-			"f3": " and we'll get right on it!"
+			"f1": "Github používáme rovněž pro hlášení chyb a žádosti o nové funkce. Pokud najdete nějakou chybu nebo máte báječný nápad na novou funkci, ozvěte se! Pošlete nám ",
+			"f2": "hlášení",
+			"f3": " a my se do toho hned dáme!"
 		},
 
-		"h3": "Google+ Group",
+		"h3": "Skupina na Google+",
 		"p4": {
-			"f1": "Join the devs and other ToonStore users on our ",
-			"f2": "Google+ group",
-			"f3": " to discuss the latest updates to the site, RPGs, characters, or anything else! We'd love to have your feedback!"
+			"f1": "Přidejte se k vývojářům a uživatelům služby ToonStore ve ",
+			"f2": "skupině na Google+",
+			"f3": " a získáte přístup k informacím o nejnovějších úpravách stránek, hrách, postavách a všem možném dalším! Rádi vás uvidíme!"
 		},
 
-		"h4": "Email",
+		"h4": "E-mail",
 		"p5": {
-			"f1": "If you want to contact us directly, you can email us at ",
+			"f1": "Chcete-li nám napsat můžete to udělat na  ",
 			"f2": "."
 		}
 	},
-
+	
 	"donate":
 	{
 		"pagetitle": "Donate",

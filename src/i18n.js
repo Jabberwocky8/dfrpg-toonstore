@@ -4,9 +4,11 @@ var i18n = require('i18n'),
 	libpath = require('path'),
 	express = require('express');
 
+var global = require('./global.js');
+
 // the translation middleware
 var config = {
-	locales: ['en-US','pt-BR'],
+	locales: ['en-US','pt-BR','cs-CZ','fr-CA'],
 	defaultLocale: 'en-US',
 	directory: libpath.resolve(__dirname,'..','locales'),
 	extension: '.json',
@@ -69,6 +71,8 @@ exports.detect = function(req,res,next)
 		res.i18n.selectedLocale = config.defaultLocale;
 	}
 
+	res.setHeader("Content-Language", res.i18n.selectedLocale);
+
 	next();
 };
 
@@ -97,21 +101,26 @@ function detectCookieLocale(cookie)
 {
 	cookie = cookie ? cookie.toUpperCase() : null;
 
-	for(var i=0; i<config.locales.length; i++)
-	{
-		if( config.locales[i].toUpperCase() === cookie ){
-			return config.locales[i];
-		}
-		else if( /(\w{2})-/.exec(config.locales[i])[1].toUpperCase() === cookie ){
-			return config.locales[i];
+	if( cookie ){
+		for(var i=0; i<config.locales.length; i++)
+		{
+			if( config.locales[i].toUpperCase() === cookie ){
+				return config.locales[i];
+			}
+			else if( /(\w{2})-/.exec(config.locales[i])[1].toUpperCase() === cookie ){
+				return config.locales[i];
+			}
 		}
 	}
-
-	return null;
+	else
+		return null;
 }
 
 function detectHeaderLocale(header)
 {
+	if( !header )
+		return null;
+
 	var langs = header.split(',').map(function(l){
 		var match = /([A-Za-z-]+)(?:;q=([0-9.]+))?/.exec(l);
 		return {
@@ -136,6 +145,7 @@ function detectHeaderLocale(header)
 exports.cookieRedirect = function(req,res,next)
 {
 	if( res.i18n.cookieLocale && !res.i18n.pathLocale ){
+		global.log('Cookie redirect to preferred locale');
 		res.redirect( '/'+res.i18n.cookieLocale+ req.url );
 	}
 	else {

@@ -38,7 +38,7 @@ app.use(i18n.detect);
 
 // route the registration pages
 app.get('/register', i18n.cookieRedirect, global.renderPage('register'));
-app.get('/federated-register', global.renderPage('register'));
+app.get('/federated-register', i18n.cookieRedirect, global.renderPage('register'));
 app.get('/post-register', global.renderPage('register'));
 app.post('/register', register.register);
 app.post('/federated-register', register.federatedRegister);
@@ -105,8 +105,8 @@ app.get('/site/howto', i18n.cookieRedirect, global.renderPage('howto'));
 app.get('/', i18n.cookieRedirect, global.renderPage('index'));
 
 app.use('/static', express.static( libpath.resolve(__dirname,'..','static'), {maxAge: 24*60*60}));
-app.get('/sitemap.xml', sitemap.serve);
-
+app.get('/sitemap.xml', sitemap.serveSitemap);
+app.get('/robots.txt', sitemap.serveRobots);
 app.get('/stats', stats.serveStats);
 
 
